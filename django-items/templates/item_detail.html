@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for item in object_list %}
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.description }}</p>
+        <p>Purchased by: {{ item.purchaser }}</p>
+    {% endfor %}
+
+{% endblock content %}
